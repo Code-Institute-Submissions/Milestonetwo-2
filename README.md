@@ -4,7 +4,7 @@ Diving is a sport where divers compete in how to perform technical divies as cor
 
 This app is helpful for beginners of the sport of diving. It provides a variety of information useful for divers and is also ment to be brought to the pool to be used while practicing. Map contents on this app is most useful for users located in Sweden.  
 
-###Features
+### Features
 ---
 
 * There are many dives to perform in the sport of diving and new dives is invented and acknowledged as the sport evolves. User can see all dives present in this particular Dive App as they are displayed in a colorful Bubble Chart. User can hoover the bubbles to see the level of difficulty of each dive. 
@@ -17,7 +17,7 @@ This app is helpful for beginners of the sport of diving. It provides a variety 
 
 * User can search the dives on this site to see their level of difficulty. This is useful for divers preparing for or attending at competitions. 
 
-###Technologies used
+### Technologies used
 * Html5
 * CSS
 * Javascript
@@ -25,7 +25,7 @@ This app is helpful for beginners of the sport of diving. It provides a variety 
 * D3
 * Leaflet
 
-###Suggested Contribution
+### Suggested Contribution
 * This app only contains dives on beginner-levels, it could be extended with more advanced levels.
 * A user input and log in function could be very userful on this site. It should be possible for users to make and name their own dive lists. Also the users should be able to comment the dives with results and coach reviews. 
 * A login function for trainers could make it possible to prepare practice for groups and individual divers. 
@@ -34,8 +34,13 @@ This app is helpful for beginners of the sport of diving. It provides a variety 
 * The map of diving clubs could have a input for user contribution on good dive sites.
 * The leaflet map could have more information on waves since this is important for outdoor practice regarding performance and water depth.
 
-### 
-
+### Testing
+* This app is tested with Jasmine to see that: 
+  * Buttons work in dive app
+  *D3 map works and is created with the right sizes on height and witdt
+ * Diveapp and functions in D3 is tested for functionality at blackbox tested
+ *Web Validators is used to inspect code.
+  
 ### Licence
 * Student at:
 Code Institute 2019

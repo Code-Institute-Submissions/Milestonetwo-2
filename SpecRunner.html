@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- First the Style Sheets-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- And the order is: D3 Crossfilter DC -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+
+    <!-- For additional Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Testing with Jasmine -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine-html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/boot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jasmine-jquery@2.1.1/lib/jasmine-jquery.min.js"></script>
+    <script src="swedenmap.js"></script>
+    <script src="Specbubbles.js"></script>
+
+    <title>Live Dive for Testing</title>
+</head>
+<body>
+    <section class="section">
+
+
+        <!--Container........................................................................................-->
+        <div class="container-fluid justify-content-center align-items-center poolcolordeep1 my-auto">
+            <div class="row">
+
+                <!--Map to the left-->
+                <div class="col-12 col-md-6 col-xl-2 order-2 order-xl-1 justify-content-center align-items-center" id="chartArea">
+                    <div class="text-center mt-2"><h2>Diving Clubs</h2><h5>In Sweden</h5></div>
+                    <div id="mapid2" class="justify-content-center align-items-center" style="height: 450px;"></div>
+                    <div id="mapidtooltip" class="justify-content-center align-items-center"></div>
+                    <!--Switches to swedenmap-->
+                    <div class="col-12 text-center block mapswitches">
+                        <h5 class="lead4 text-center">Platforms</h5>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customSwitch1" value="A" checked onstyle="danger">
+                            <label class="custom-control-label" for="customSwitch1"><i class="fa fa-arrow-up" aria-hidden="true"></i>10m</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customSwitch2" value="B" checked>
+                            <label class="custom-control-label" for="customSwitch2"><i class="fa fa-arrow-up " aria-hidden="true"></i>  5m</label>
+                        </div>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input checkbox" id="customSwitch3" value="C" checked>
+                            <label class="custom-control-label" for="customSwitch3"><i class="fa fa-arrow-up " aria-hidden="true"></i>  3m</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--dive app & below that -the bubbles................................................................................-->
+                <div class="col-12 col-xl-8 order-1 order-xl-2 justify-content-center align-items-center centerdiv">
+                    <div class="jumbotron align-items-center jumbostyle">
+                        <h1 class="text-center">Live Dive</h1>
+                        <h5 class="text-center">Practice your <span class="d-none d-md-block">Springboard & Platform</span> diving -press a button to start!</h5>
+
+                        <!--...................buttonz.................................................................-->
+                        <div class="practicebuttondiv">
+                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl1 " data-toggle="modal" data-target="#myModal1"> level 1</button>
+                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl2" data-toggle="modal" data-target="#myModal2"> level 2</button>
+                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl3" data-toggle="modal" data-target="#myModal3"> level 3</button>
+                            <!--.Search button........................................................-->
+                            <div id=results class="align-items-center">
+                                <div class="search-box">
+                                    <input class="search-txt" type="text" name="" id="search" placeholder="search dive">
+                                    <a class="search-btn" href="#">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                                <ul class="list-group" id="result"></ul>
+                            </div>
+                            <hr />
+                        </div>
+
+
+
+                        <!--...Modalz & Bubbles.....................................................................-->
+                        <div class="row text-center">
+                            <!--level 1.............................................................-->
+                            <div class="justify-content-center modal" id="myModal1">
+
+                                <div id="newDive1" class="showdives modal-dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2>LEVEL 1</h2>
+                                    <h5>Code</h5><p id="level1code" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5>Height</h5><p id="level1height" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5>Difficulty</h5><p id="level1DD" class="divedescription"></p>
+                                </div>
+                                <button onclick="newDive1()" class="btn btn-lg btn-info" id="newD1">New Dive</button>
+                            </div>
+                            <!--level 2.............................................................-->
+                            <div class="justify-content-center modal" id="myModal2">
+                                <div id="newDive2" class="showdives modal-dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2>LEVEL 2</h2>
+                                    <h5>Code</h5><p id="level2code" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5>Height</h5><p id="level2height" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5>Difficulty</h5><p id="level2DD" class="divedescription"></p>
+                                </div>
+                                <button onclick="newDive2()" class="btn btn-lg btn-info">New Dive</button>
+                            </div>
+
+                            <!--level 3.............................................................-->
+                            <div class="justify-content-center modal" id="myModal3">
+
+                                <div id="newDive3" class="showdives modal-dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2>LEVEL 3</h2>
+                                    <h5>Code</h5><p id="level3code" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5>Height</h5><p id="level3height" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5>Difficulty</h5><p id="level3DD" class="divedescription"></p>
+                                </div>
+                                <button onclick="newDive3()" class="btn btn-lg btn-info">New Dive</button>
+                            </div>
+                            <!--..............................................................................-->
+                            <!--Bubble Chart ............................................................................................-->
+                            <div class="col-12 col-lg-3 d-none mt-5 d-xl-block bubbleexplanation">
+                                <h4>DIVES ON THIS SITE</h4>
+                                <p>Hoover to see<br />the difficulty<br />of each Dive (DD)</p>
+                            </div>
+                            <div class="col-12 col-xl-6 justify-content-center align-items-center bubblesinhere">
+                                <div id="chart" class="bubblediv"</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Leaflet map to the right & image........................................................................-->
+            <div class="col-12 col-md-6 col-lg- 3 col-xl-2 order-3 justify-content-center align-items-center jumboright">
+                <div id="map1" class="col-12 mt-4 mb-4 center-align"></div>
+                <div id="sigma" class="col-12 mt-3 justify-content-center">
+                    <img src="diveimage.jpg" alt="diving guy" width="100%">
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!--App scripts................................................................-->
+    <!--search for dives-->
+    <script type="text/javascript" src="button1.js"></script>
+    <script type="text/javascript" src="button2.js"></script>
+    <script type="text/javascript" src="button3.js"></script>
+    <!--searchfunction-->
+    <script>
+        $(document).ready(function () {
+            $.ajaxSetup({ cache: false });
+            $('#search').keyup(function () {
+                $('#result').html('');
+                $('#state').val('');
+                var searchField = $('#search').val();
+                var expression = new RegExp(searchField, "i");
+                $.getJSON('jsondiving3.json', function (jsondiving3) {
+                    $.each(jsondiving3, function (key, value) {
+                        if (value.name.search(expression) != -1 || value.size.search(expression) != -1) {
+                            $('#result').append('<li class="list-group-item link-class">' + value.name + ' | <span class="text-muted">' + value.height + 'm </span> | <span class="text-muted">DD' + value.size + '</spa</li>');
+                        }
+                    });
+                });
+            });
+
+            $('#result').on('click', 'li', function () {
+                var click_text = $(this).text().split('|');
+                $('#search').val($.trim(click_text[0]));
+                $("#result").html('');
+            });
+        });
+
+    </script>
+
+
+
+    <script type="text/javascript" src="swedenmap.js"></script>
+
+    <!--bubbles JS-->
+    <script>
+
+
+        //bubblechart
+        var colors = ['#7cbbdb', '#1f88c4', '#00b0b0', '#7a8da2', '7d927a'];
+        //   .domain (["level1","level2","level3","level4","level4",])
+        //   .range
+
+        var diameter = "300",
+            format = d3.format(".2n"),
+            color = d3.scaleOrdinal().range(colors);
+
+
+        var bubble = d3.pack()
+            .size([diameter, diameter])
+            .padding(2);
+
+        var svg = d3.select("div#chart")
+            .append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "0 0 300 300")
+            .classed("svg-content", true);
+
+
+
+        function resize() {
+            width = document.getElementById('#chart').clientWidth;
+            d3.select('#chart svg')
+                .attr('width', width)
+                .attr('height', height);
+        }
+
+
+        d3.json("bubbledives.json", function (error, data) {
+            if (error) throw error;
+
+
+
+            var root = d3.hierarchy(classes(data))
+                .sum(function (d) { return d.value; })
+                .sort(function (a, b) { return b.value - a.value; });
+
+
+
+
+            //centrera cirklarna
+            bubble(root);
+            var node = svg.selectAll(".node")
+                .data(root.children)
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+            //hovertext
+            node.append("title")
+                .text(function (d) { return " Code " + d.data.className + " | DD " + format(d.value); });
+
+            node.append("circle")
+                .attr("r", function (d) { return d.r; })
+                .style("fill", function (d) {
+                    return color(d.data.packageName);
+                });
+            //text inside the circle
+            node.append("text")
+                .attr("dy", ".3em")
+                .attr("fill", "white")
+                .style("text-anchor", "middle")
+                .style("font-size", 10)
+                .style("font-family", 'Montserrat')
+                .style("font-weight", "normal")
+                .text(function (d) { return d.data.className.substring(0, d.r / 3); });
+
+        });
+
+        // Returns a flattened hierarchy containing all leaf nodes under the root.
+        function classes(root) {
+            var classes = [];
+
+            //coming again and again and again...
+            function recurse(name, node) {
+                if (node.children) node.children.forEach(function (child) { recurse(node.name, child); });
+                else classes.push({ packageName: name, className: node.name, value: node.size });
+            }
+
+            recurse(null, root);
+            return { children: classes };
+        }
+
+        d3.select(self.frameElement).style("height", diameter + "px");
+    </script>
+
+
+
+
+    <!--Leaflet-->
+    <script>
+        var mapTileLayers = L.tileLayer("http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
+            attribution: "Powered by <a href='https://developers.arcgis.com/terms/attribution/' target='_blank' rel='noopener'>Esri</a>"
+        });
+
+
+        //var mapOverlay = L.tileLayer("http://services.arcgisonline.com/arcgis/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}");
+        //mapOverlay.bringToFront().addTo(map).setZIndex(2);
+
+
+        var wind = L.tileLayer('http://{s}.tile.openweathermap.org/map/wind/{z}/{x}/{y}.Stockholm?appid=822ef3960584788ffe08ed73df20904c', {
+            maxZoom: 5,
+            attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
+            opacity: 0.2
+        });
+
+
+        var temp = L.tileLayer('http://{s}.tile.openweathermap.org/map/temp/{z}/{x}/{y}.Stockholm?appid=822ef3960584788ffe08ed73df20904c', {
+            maxZoom: 5,
+            attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
+            opacity: 0.3
+        });
+
+
+        var precipitation = L.tileLayer('http://{s}.tile.openweathermap.org/map/precipitation/{z}/{x}/{y}.Stockholm?appid=822ef3960584788ffe08ed73df20904c', {
+            maxZoom: 5,
+            attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
+            opacity: 0.7
+        });
+
+
+        var clouds = L.tileLayer('http://{s}.tile.openweathermap.org/map/clouds/{z}/{x}/{y}.Stockholm?appid=822ef3960584788ffe08ed73df20904c', {
+            maxZoom: 5,
+            attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
+            opacity: 0.7
+        });
+
+
+
+        var map = L.map("map1", {
+            layers: [mapTileLayers, wind],
+            center: [58.5, 14],
+            zoom: 5
+        });
+
+        var baseLayers = {
+            "wind": wind,
+            "temp": temp,
+            "precipitation": precipitation,
+            "clouds": clouds
+        };
+
+        var baseControl = L.control.layers(baseLayers).addTo(map);
+
+        L.control.scale().addTo(map);
+
+
+
+
+        var legend = L.control({ position: 'topright' });
+
+        function getColor(d) {
+            return d > 30 ? '#A7443F' :
+                d > 20 ? 'rgba(252, 128, 20, 1)' :
+                    d > 10 ? 'rgba(255, 194, 40,1)' :
+                        d > 1 ? 'rgba(255, 240, 40, 1)' :
+                            'rgba(194, 255, 40, 1)';//green
+        }
+
+
+        legend.onAdd = function (map) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = [0, 10, 20, 30],
+                labels = ['<strong> TEMP (c) </strong>'],
+                from, to;
+
+            for (var i = 0; i < grades.length; i++) {
+                from = grades[i];
+                to = grades[i + 1];
+
+                labels.push(
+                    '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                    from + (to ? '&ndash;' + to : '+'));
+            }
+            div.innerHTML = labels.join('<br>');
+            return div;
+
+        };
+
+        legend.addTo(map);
+
+
+        var legendwind = L.control({ position: 'bottomright' });
+
+        function getColorwind(d) {
+            return d > 100 ? 'rgba(13,17,38,1)' :
+                d > 50 ? 'rgba(70,0,175,1)' :
+                    d > 20 ? 'rgba(116,76,172, 0.9)' :
+                        d > 10 ? 'rgba(179,100,188, 0.9)' :
+                            d > 1 ? 'rgba(238,206,206, 0.9)' :
+                                'rgba(255,255,255, 0.9)';
+        }
+
+
+        legendwind.onAdd = function (map) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = [1, 10, 20, 50],
+                labels = ['<strong> WIND (m/s) </strong>'],
+                from, to;
+
+            for (var i = 0; i < grades.length; i++) {
+                from = grades[i];
+                to = grades[i + 1];
+
+                labels.push(
+                    '<i style="background:' + getColorwind(from + 1) + '"></i> ' +
+                    from + (to ? '&ndash;' + to : '+'));
+            }
+            div.innerHTML = labels.join('<br>');
+            return div;
+
+        };
+
+        legendwind.addTo(map);
+
+
+
+    </script>
+
+</body>
+</html>

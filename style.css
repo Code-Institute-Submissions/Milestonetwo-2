@@ -1,0 +1,391 @@
+﻿/*Turkos: 9bd4cb
+light Turkos: dcefed
+Militärgrön: 7d927a
+Ljusblå: 7cbbdb
+Mörkare turkos: 00b0b0
+Gråblå: 7a8da2
+Blå: 1f88c4
+gul: 9bd4cb
+Red: ff3300
+
+font-family: 'Lato', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+
+body {
+display:flex;
+flex-direction: column;
+height: 100vh;
+margin:0;
+}
+
+
+
+.jumbostyle {
+    background-color: #dcefed;
+    text-align: center;
+    align-content: center;
+    display: block;
+    height:100%;
+}
+
+.jumboright {
+    height: 100vh;
+}
+
+
+h1 {
+    font-family: 'Lato', serif;
+    font-size: 6em;
+    color: white;
+    background-color: white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #1f88c4;
+    text-shadow: rgba(155,212,203,0.9) 0px 3px 3px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 70px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+}
+
+
+h2 {
+    font-family: 'Lato', serif;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #1f88c4;
+    text-shadow: rgba(255,255,255,0.4) 0px 3px 3px;
+}
+
+.lead {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00b0b0;
+
+}
+
+.lead3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.lead4 {
+    font-family: 'Lato', serif;
+    color: white;
+    background-color: darkgray;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: #1f88c4;
+    text-shadow: rgba(255,255,255,0.4) 0px 3px 3px;
+}
+
+
+.heightcheckdiv {
+    z-index: 10;
+    display: block;
+}
+
+#sigma {
+    height: 180px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #dcefed;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 300px;
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height: 500px;
+}
+
+
+
+.poolcolor {
+    background-color: #9bd4cb;
+}
+
+.poolcolorlight {
+    background-color: #dcefed;
+}
+
+.poolcolordeep1 {
+    color: #00b0b0;
+    height: 100%;
+    height: 100vh;
+}
+
+
+
+
+/*button Level 1*/
+.btnl1 {
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #7cbbdb;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #7cbbdb;
+    margin: 5px;
+    text: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .btnl1:hover {
+        background: white;
+        color: #7cbbdb;
+        border: 5px solid #7cbbdb;
+    }
+
+.btnl2 {
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #1f88c4;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #1f88c4;
+    text: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .btnl2:hover {
+        background: white;
+        color: #1f88c4;
+        border: 5px solid #1f88c4;
+    }
+
+.btnl3 {
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #00b0b0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #00b0b0;
+    text: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .btnl3:hover {
+        background: white;
+        color: #00b0b0;
+        border: 5px solid #00b0b0;
+    }
+
+
+/*modal showing dives*/
+
+.showdives {
+    background: #9bd4cb;
+    width: 300px;
+    height: 350px;
+    padding: 5px;
+    color: white;
+}
+
+
+
+.divedescription {
+    font-size: 2em;
+    display: block;
+}
+
+
+
+/* Search with style àla DarkCode */
+
+.search-box {
+    position: absolute;
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+}
+
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #2f3640;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+}
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-btn {
+    color: #9bd4cb;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00b0b0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-box:hover > .search-btn {
+    background: #2f3640;
+}
+
+/*jsonsearch*/
+
+#result {
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    overflow-y: auto;
+    max-height: 400px;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.link-class:hover {
+    background-color: #f1f1f1;
+}
+
+
+/*the maps*/
+
+
+.circle:hover {
+    stroke: white;
+    stroke-width: 3px;
+}
+
+
+/*weather map*/
+
+.leaflet-control-attribution {
+    display:none;
+}
+
+.legend {
+    line-height: 20px;
+    color: #555;
+    font: 'Montserrat', sans-serif;
+}
+
+    .legend i {
+        width: 16px;
+        height: 18px;
+        float: left;
+        margin-right: 5px;
+        opacity: 0.7;
+    }
+#map1 {
+    height: 500px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #dcefed;
+}
+
+.centerdiv {
+    height: 100vh;
+    overflow: hidden;
+    vertical-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #dcefed;
+}
+
+.bubblesinhere {
+    display: inline-block;
+    vertical-align: center;
+    height:100%;
+}
+
+.bubbleexplanation {
+    margin: 0;
+    padding: 0;
+}
+
+.bubblediv {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    vertical-align: center;
+    overflow: hidden;
+}
+
+.bubblediv-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#chartArea {
+    height: 100%;
+    overflow: hidden;
+    display:block;
+}
+
+-mapswitches {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:20;
+}
+
+/*{
+    background-color:black;
+    color:#0f0;
+    outline:1px solid #f00;
+}*/
+
+

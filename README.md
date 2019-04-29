@@ -41,7 +41,7 @@ This app is helpful for beginners of the sport of diving. It provides a variety 
  * Diveapp and functions in D3 is tested for functionality at blackbox tested
  *Web Validators is used to inspect code.
   
-### Licence
+### License
 * Student at:
 Code Institute 2019
 

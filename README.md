@@ -14,7 +14,7 @@ This app is helpful for beginners of the sport of diving. It provides a variety 
 
 * There are many dives to perform in the sport of diving and new dives is invented and acknowledged as the sport evolves. User can see all dives present in this particular Dive App as they are displayed in a colorful Bubble Chart. User can hoover the bubbles to see the level of difficulty of each dive. 
 
-* User can press one of three "level buttons" to choose a level of difficulty for practice. After that the user can press the button "new dive" and he or she will see a randomly selected dive displayed with dive code, difficulty and hight specified. User can change level of difficulty at any time to make the app useful for serveral divers practicing togehter. 
+* User can press one of three "level buttons" to choose a level of difficulty for practice. After that the user can press the button "new dive" and he or she will see a randomly selected dive displayed with dive code, difficulty, description and hight specified. User can change level of difficulty at any time to make the app useful for serveral divers practicing togehter. 
 
 * User can hover a Sweden Map to see where in Sweden there are Diving Clubs teaching this sport. The map markers have different colors depending on the hight of the platform at the Swim Arena. Swich buttons makes it possible to select heights to be desplayed. This is especially helpful for atheltes looking for practicing the highest dives -as high platforms (7.5-10m) is very rare in Sweden.
 

@@ -158,7 +158,7 @@ d3.select(self.frameElement).style("height", diameter + "px");
     }
 
 
-        legend.onAdd = function (map) {
+        legend.onAdd = function (_map) {
 
             var div = L.DomUtil.create('div', 'info legend'),
             grades = [0, 10, 20, 30],
@@ -193,7 +193,7 @@ d3.select(self.frameElement).style("height", diameter + "px");
         }
 
 
-        legendwind.onAdd = function (map) {
+        legendwind.onAdd = function (_map) {
 
             var div = L.DomUtil.create('div', 'info legend'),
                 grades = [1, 10, 20, 50],
@@ -221,13 +221,12 @@ d3.select(self.frameElement).style("height", diameter + "px");
             $.ajaxSetup({ cache: false });
             $('#search').keyup(function () {
                 $('#result').html('');
-                $('#state').val('');
                 var searchField = $('#search').val();
                 var expression = new RegExp(searchField, "i");
-                $.getJSON('bubbledives.json', function (bubbledives) {
-                    $.each(bubbledives, function (key, value) {
+                $.getJSON('searchbubbles.json', function (searchbubbles) {
+                    $.each(searchbubbles, function (_key, value) {
                         if (value.name.search(expression) != -1 || value.size.search(expression) != -1) {
-                            $('#result').append('<li class="list-group-item link-class">' + value.name + ' | <span class="text-muted">' + value.height + 'm </span> | <span class="text-muted">DD' + value.size + '</spa</li>'+ value.description + '</spa</li>');
+                            $('#result').append('<li class="list-group-item link-class">' + value.name + ' | <span class="text-muted">' + value.height + 'm </span> | <span class="text-muted">DD' + value.size + '</spa</li></br>'+ value.description + '</spa</li>');
                         }
                     });
                 });
@@ -325,7 +324,7 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
 
 
     // Three function that change the tooltip when user hover / move / leave a cell
-    var mouseover = function (d) {
+    var mouseover = function (_d) {
         Tooltip.style("opacity", 1)
     }
 
@@ -336,7 +335,7 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
             .style("top", (d3.mouse(this)[1]) + "px")
     }
 
-    var mouseleave = function (d) {
+    var mouseleave = function (_d) {
         Tooltip.style("opacity", 0)
     }
 
@@ -362,13 +361,11 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
 
 
 
-
-
     // This function is gonna change the opacity and size of selected and unselected circles
     function update() {
 
         // For each check box:
-        d3.selectAll(".checkbox").each(function (d) {
+        d3.selectAll(".checkbox").each(function (_d) {
             cb = d3.select(this);
             grp = cb.property("value")
 

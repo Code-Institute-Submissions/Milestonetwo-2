@@ -1,10 +1,14 @@
+/*Turkos: 9bd4cb
+light Turkos: dcefed
+Militärgrön: 7d927a
 /*
 USED COLORS DEC
 Background-Blue: #08172d
 Header12-Blue: #1f88c4
 Header5-Blue: #00b0b0;
-Level1-blueA: #7cbbdb;
+Level1-blueA: #7cbbdb; bytt mot: #4ba2ce
 Level1-blueB: #f10f4c;
+Level1-Modal-Background-Blue: #4ba2ce
 Hoverlinks: #f1f1f1;
 Pink-button: #f10f4c;
 white: white
@@ -15,6 +19,8 @@ font-family: 'Lato', serif;
 font-family: 'Montserrat', sans-serif;
 */
 
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -22,6 +28,8 @@ body {
     margin: 0;
     background-color: #08172d;
 }
+
+
 
 /* center of page w diveapp and bubbles */
 .jumbostyle {
@@ -43,6 +51,8 @@ h1 {
     font-family: 'Lato', serif;
     font-size: 6em;
     color: #1f88c4;
+    text-shadow: rgba(155,212,203,0.9) 0 3px 3px;
+    text-shadow: 0 4px 3px rgba(0,0,0,0.2), 0 8px 13px rgba(0,0,0,0.1), 0 18px 23px rgba(0,0,0,0.1);
 }
 
 
@@ -111,18 +121,20 @@ img {
 /* the main container with everything in */
 .poolcolordeep1 {
     color: #00b0b0;
+    height: 100%;
     height: 100vh;
 }
 
-/*buttons*/
+
+/*button Level 1*/
 .btnl1 {
     color: white;
     width: 6em;
     height: 6em;
     border-radius: 50%;
-    background: #7cbbdb;
+    background: #4ba2ce;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    border: 5px solid #7cbbdb;
+    border: 5px solid #4ba2ce;
     margin-right: 2px;
     justify-content: center;
     align-items: center;
@@ -131,8 +143,8 @@ img {
 
     .btnl1:hover {
         background: white;
-        color: #7cbbdb;
-        border: 5px solid #7cbbdb;
+        color: #4ba2ce;
+        border: 5px solid #4ba2ce;
     }
 
 .btnl1newdive {
@@ -143,10 +155,9 @@ img {
     border-radius: 50%;
     background: #f10f4c;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    border: 7px solid #7cbbdb;
+    border: 7px solid #4ba2ce;
     margin: 2px;
     font-size: 2em;
-    text-shadow: rgb(72, 0, 255) 0 3px 3px;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
@@ -155,7 +166,7 @@ img {
     .btnl1newdive:hover {
         background: white;
         color: #f10f4c;
-        border: 7px solid #7cbbdb;
+        border: 7px solid #4ba2ce;
         text-shadow: none;
     }
 
@@ -191,7 +202,6 @@ img {
     border: 7px solid #1f88c4;
     margin: 2px;
     font-size: 2em;
-    text-shadow: rgb(72, 0, 255) 0 3px 3px;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
@@ -217,23 +227,23 @@ img {
     transition: 0.5s;
 }
 
-    .btnl3:hover {
-        background: white;
-        color: #00b0b0;
-        border: 5px solid #00b0b0;
-    }
+.btnl3:hover {
+    background: white;
+    color: #00b0b0;
+    border: 5px solid #00b0b0;
+}
 
 .btnl3newdive {
     color: white;
+    font-family: 'Lato', serif;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background: #f10f4c;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    border: 7px solid #7cbbdb;
+    border: 7px solid #00b0b0;
     margin: 2px;
     font-size: 2em;
-    text-shadow: rgb(72, 0, 255) 0 3px 3px;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
@@ -243,24 +253,30 @@ img {
         background: white;
         color: #f10f4c;
         border: 7px solid #00b0b0;
-        text-shadow: none;
+        transition: 0.5s;
     }
 
-
 /*modal showing dives*/
+.modalCenter {
+    margin-top: 1em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .showdives1 {
-    background: #7cbbdb;
+    background: #4ba2ce;
     width: 300px;
-    height: 350px;
+    height: 410px;
     padding: 5px;
     color: white;
     justify-content: center;
+    vertical-align: central;
 }
 
 .showdives2 {
     background: #1f88c4;
     width: 300px;
-    height: 350px;
+    height: 410px;
     padding: 5px;
     color: white;
     justify-content:center;
@@ -269,7 +285,7 @@ img {
 .showdives3 {
     background: #00b0b0;
     width: 300px;
-    height: 350px;
+    height: 410px;
     padding: 5px;
     justify-content: center;
 }
@@ -280,10 +296,15 @@ img {
     color:white;
 }
 
+.divedescription2 {
+    font-size: 1.2em;
+    display: block;
+    color: white;
+}
+
 .h2modalheader{ 
- font-family: 'Lato', serif;
+font-family: 'Lato', serif;
 color: white;
-text-shadow: rgb(72, 0, 255) 0 3px 3px;
 }
 
 .h5modalheader {
@@ -292,74 +313,12 @@ text-shadow: rgb(72, 0, 255) 0 3px 3px;
 }
 
 
-
-/* Search with style àla DarkCode */
-
-.search-box {
-    position: absolute;
-    background: white;
-    height: 40px;
-    border-radius: 40px;
-}
-
-
-.search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: #2f3640;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0;
-}
-
-.search-box:hover > .search-txt {
-    width: 240px;
-    padding: 0 6px;
-}
-
-.search-btn {
-    color: #9bd4cb;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #00b0b0;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-}
-
-.search-box:hover > .search-btn {
-    background: #2f3640;
-}
-
-/*jsonsearch*/
-
-#result {
-    position: absolute;
-    width: 100%;
-    max-width: 300px;
-    cursor: pointer;
-    overflow-y: auto;
-    max-height: 400px;
-    box-sizing: border-box;
-    z-index: 1001;
-}
-
 .link-class:hover {
     background-color: #f1f1f1;
 }
 
 
 /*the maps*/
-
-
 .circle:hover {
     stroke: white;
     stroke-width: 3px;
@@ -367,7 +326,6 @@ text-shadow: rgb(72, 0, 255) 0 3px 3px;
 
 
 /*weather map*/
-
 .leaflet-control-attribution {
     display:none;
 }
@@ -394,7 +352,6 @@ text-shadow: rgb(72, 0, 255) 0 3px 3px;
 
 .centerdiv {
     height: 100vh;
-
     vertical-align: middle;
     padding: 0;
     margin: 0;
@@ -404,7 +361,7 @@ text-shadow: rgb(72, 0, 255) 0 3px 3px;
 .bubblesinhere {
     display: inline-block;
     vertical-align: central;
-    height:100%;
+    height: 100%;
 }
 
 .bubbleexplanation {
@@ -438,3 +395,11 @@ text-shadow: rgb(72, 0, 255) 0 3px 3px;
     right: 0;
     z-index:20;
 }
+
+/*{
+    background-color:black;
+    color:#0f0;
+    outline:1px solid #f00;
+}*/
+
+

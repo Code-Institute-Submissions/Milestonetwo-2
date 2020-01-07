@@ -2,7 +2,7 @@ describe('Swedenmap D3 functions with jasmine', function () {
     var c;
 
     beforeEach(function () {
-        c = mapid2();
+        c = swedenMap();
         c.render();
     });
 

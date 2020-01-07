@@ -2,10 +2,22 @@
 
 https://ringarochkryss.github.io/Milestonetwo/.
 
-Dive into the bubbles of beginners Springboard and platform diving.  
-Diving is a sport where divers compete in how to perform technical divies as correct as possible. Each dives has different levels of difficulty (DD) and can be performed on different heights. The dives is named with a combination of numbers and letters describing how the dive is to be performed. The different dives is performed on springboards ( 1m and 3m ) and platforms:( 5m ,7.5m and 10m). 
+### *Dive into the bubbles of beginners Springboard and platform diving* 
 
-This app is helpful for beginners of the sport of diving. It provides a variety of information useful for divers and is also ment to be brought to the pool to be used while practicing. Map contents on this app is most useful for users located in Sweden.  
+Diving is a sport where divers compete in how to perform technical divies as correct as possible. Each dives has different levels of difficulty (DD) and the dives is named with a combination of numbers and letters describing how the dive is to be performed. The different dives is performed on springboards ( 1m and 3m ) and platforms:( 5m ,7.5m and 10m). 
+
+This app is great for beginners of the sport of diving. It provides a variety of information useful for divers and is also ment to be brought to the pool to be used while practicing. Map contents on this app is most useful for users located in Sweden.  
+
+### UX
+
+#### Mockups 
+My first mockup was made in Marvel and it looks great. Unfortunately this is a school project so I dumped the idea and it's so good I will have to do that another time.
+
+My second mockup is not at all that good looking - and it's made in word. The thing is I learned about D3 and that is so fun! So I added one map for showing places for cities (with dive platforms) and one map for weather and wind. 
+And a bubble chart to show all dives. Level of difficulty makes the bubbles larger or smaller. The level where you find the dive decides the color of the bubble. 
+I think I should build the first mockup later -for the purpose of practice it is just enough and I like the design!
+
+
 
 ### Features
 ---

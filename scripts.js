@@ -216,33 +216,6 @@ d3.select(self.frameElement).style("height", diameter + "px");
         legendwind.addTo(map);
 
 
-//...........searchfunction................................................
-
-
-        $(document).ready(function () {
-            $.ajaxSetup({ cache: false });
-        $('#search').keyup(function () {
-            $('#result').html('');
-        $('#state').val('');
-        var searchField = $('#search').val();
-        var expression = new RegExp(searchField, "i");
-                $.getJSON('jsondiving3.json', function (jsondiving3) {
-            $.each(jsondiving3, function (key, value) {
-                if (value.name.search(expression) != -1 || value.size.search(expression) != -1) {
-                    $('#result').append('<li class="list-group-item link-class">' + value.name + ' | <span class="text-muted">' + value.height + 'm </span> | <span class="text-muted">DD' + value.size + '</spa</li>');
-                }
-            });
-        });
-    });
-
-            $('#result').on('click', 'li', function () {
-                var click_text = $(this).text().split('|');
-        $('#search').val($.trim(click_text[0]));
-        $("#result").html('');
-    });
-});
-
-
 
 //...........Pool Map (on the left)................................................
 

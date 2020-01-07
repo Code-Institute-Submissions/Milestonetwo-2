@@ -1,4 +1,4 @@
-﻿
+
 //...........bubblechart................................................
         var colors = ['#7cbbdb', '#1f88c4', '#00b0b0', '#7a8da2', '7d927a'];
         //   .domain (["level1","level2","level3","level4","level4",])
@@ -396,26 +396,26 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
 //...........Button Level 1................................................
 var firstLevel = [
 
-    { "name": "102C", "height": 1, "size": 3.0 },
-    { "name": "201A", "height": 1, "size": 2.1 },
-    { "name": "100A", "height": 3, "size": 2.5 },
-    { "name": "100B", "height": 1, "size": 1.1 },
-    { "name": "100A", "height": 5, "size": 1.2 },
-    { "name": "020C", "height": 1, "size": 2.1 },
-    { "name": "020B", "height": 1, "size": 2.3 },
-    { "name": "020A", "height": 1, "size": 2.1 },
-    { "name": "020A", "height": 3, "size": 2.2 },
-    { "name": "101A", "height": 1, "size": 2.7 },
-    { "name": "101B", "height": 1, "size": 2.4 },
-    { "name": "101B", "height": 3, "size": 1.7 },
-    { "name": "101C", "height": 1, "size": 1.2 },
-    { "name": "101C", "height": 3, "size": 2.7 },
-    { "name": "100B", "height": 3, "size": 2.2 },
-    { "name": "010B", "height": 1, "size": 2.7 },
-    { "name": "010B", "height": 3, "size": 2.3 },
-    { "name": "010C", "height": 1, "size": 2.7 },
-    { "name": "010C", "height": 3, "size": 2.1 },
-    { "name": "100C", "height": 1, "size": 2.5 }
+    { "name": "102C", "height": 1, "size": 1.4, "description": "Forward Somersault Tuck" },
+    { "name": "201A", "height": 1, "size": 1.7, "description": "Back Dive Str" },
+    { "name": "100A", "height": 3, "size": 0.0, "description": "Forward Feet First Str" },
+    { "name": "100B", "height": 1, "size": 0.0, "description": "Forward Feet First Pike" },
+    { "name": "100A", "height": 5, "size": 0.0, "description": "Forward Feet First Str" },
+    { "name": "020C", "height": 1, "size": 0.0, "description": "Back Fall Tuck" },
+    { "name": "020B", "height": 1, "size": 0.0, "description": "Back Fall Pike" },
+    { "name": "020A", "height": 1, "size": 0.0, "description": "Back Fall Str" },
+    { "name": "020A", "height": 3, "size": 1.0, "description": "Back Fall Str" },
+    { "name": "101A", "height": 1, "size": 1.6, "description": "Forward Dive Str" },
+    { "name": "101B", "height": 1, "size": 1.3, "description": "Forward Dive Pike" },
+    { "name": "101B", "height": 3, "size": 1.5, "description": "Forward Dive Pike" },
+    { "name": "101C", "height": 1, "size": 1.2, "description": "Forward Dive Tuck" },
+    { "name": "101C", "height": 3, "size": 1.4, "description": "Forward Dive Tuck" },
+    { "name": "100B", "height": 3, "size": 0.0, "description": "Forward Feet First Pike" },
+    { "name": "010B", "height": 1, "size": 0.0, "description": "Forward Fall Pike" },
+    { "name": "010B", "height": 3, "size": 0.0, "description": "Forward Fall Pike" },
+    { "name": "010C", "height": 1, "size": 0.0, "description": "Forward Fall Tuck" },
+    { "name": "010C", "height": 3, "size": 0.0, "description": "Forward Fall Tuck" },
+    { "name": "100C", "height": 1, "size": 0.0, "description": "Forward Tuck" }
 ];
 
 function newDive1() {
@@ -425,27 +425,28 @@ function newDive1() {
     document.getElementById("level1code").innerHTML = firstLevel[randomNumber].name;
     document.getElementById("level1height").innerHTML = firstLevel[randomNumber].height;
     document.getElementById("level1DD").innerHTML = firstLevel[randomNumber].size;
+    document.getElementById("level1description").innerHTML = firstLevel[randomNumber].description;
 } 
 
 //...........Button Level 2................................................
 var secLevel = [
 
-    { "name": "010A", "height": 1, "size": 5.0 },
-    { "name": "010C", "height": 3, "size": 2.1 },
-    { "name": "010B", "height": 5, "size": 2.1 },
-    { "name": "010A", "height": 3, "size": 2.2 },
-    { "name": "101B", "height": 3, "size": 2.1 },
-    { "name": "101C", "height": 3, "size": 2.3 },
-    { "name": "101A", "height": 3, "size": 2.1 },
-    { "name": "102B", "height": 1, "size": 2.4 },
-    { "name": "102C", "height": 3, "size": 2.1 },
-    { "name": "100C", "height": 5, "size": 1.1 },
-    { "name": "020A", "height": 3, "size": 2.5 },
-    { "name": "020C", "height": 3, "size": 2.6 },
-    { "name": "201B", "height": 3, "size": 2.5 },
-    { "name": "201C", "height": 3, "size": 5.0 },
-    { "name": "100C", "height": 3, "size": 2.7 },
-    { "name": "301", "height": 1, "size": 2.5 }
+   { "name": "010A", "height": 1, "size": 5.0, "description": "Forward Str" },
+    { "name": "010C", "height": 3, "size": 2.1, "description": "Forward Tuck" },
+    { "name": "010B", "height": 5, "size": 2.1, "description": "Forward Pike" },
+    { "name": "010A", "height": 3, "size": 2.2, "description": "Forward Str" },
+    { "name": "101B", "height": 3, "size": 2.1, "description": "Forward Pike" },
+    { "name": "101C", "height": 3, "size": 2.3, "description": "Forward Tuck" },
+    { "name": "101A", "height": 3, "size": 2.1, "description": "Forward Str" },
+    { "name": "102B", "height": 1, "size": 2.4, "description": "Forward Somersault Pike" },
+    { "name": "102C", "height": 3, "size": 2.1, "description": "Forward jump Tuck" },
+    { "name": "100C", "height": 5, "size": 1.1, "description": "Forward fall Tuck" },
+    { "name": "020A", "height": 3, "size": 2.5, "description": "Back  fall Str" },
+    { "name": "020C", "height": 3, "size": 2.6, "description": "Back fall Tuck"},
+    { "name": "201B", "height": 3, "size": 2.5, "description": "Back Fall  Pike" },
+    { "name": "201C", "height": 3, "size": 5.0, "description": "Handstand Tuck" },
+    { "name": "100C", "height": 3, "size": 2.7, "description": "Forward Tuck" },
+    { "name": "301", "height": 1, "size": 2.5, "description": "Reverse Tyska Tuck" }
 ];
 
 function newDive2() {
@@ -455,27 +456,28 @@ function newDive2() {
     document.getElementById("level2code").innerHTML = secLevel[randomNumbertwo].name;
     document.getElementById("level2height").innerHTML = secLevel[randomNumbertwo].height;
     document.getElementById("level2DD").innerHTML = secLevel[randomNumbertwo].size;
+    document.getElementById("level2description").innerHTML = secLevel[randomNumbertwo].description;
 }
 //...........Button Level 3................................................
 
 var thirdLevel = [
 
-    { "name": "201C", "height": 1, "size": 5.0 },
-    { "name": "201C", "height": 3, "size": 2.1 },
-    { "name": "010B", "height": 7.5, "size": 2.1 },
-    { "name": "100B", "height": 5, "size": 2.5 },
-    { "name": "010C", "height": 5, "size": 5.0 },
-    { "name": "103C", "height": 1, "size": 2.7 },
-    { "name": "103C", "height": 3, "size": 1.7 },
-    { "name": "100A", "height": 10, "size": 2.1 },
-    { "name": "301C", "height": 3, "size": 2.7 },
-    { "name": "302C", "height": 1, "size": 2.2 },
-    { "name": "302C", "height": 3, "size": 4.7 },
-    { "name": "200A", "height": 5, "size": 2.7 },
-    { "name": "200A", "height": 3, "size": 4.7 },
-    { "name": "101A", "height": 1, "size": 3.7 },
-    { "name": "100A", "height": 7.5, "size": 2.7 },
-    { "name": "401A", "height": 1, "size": 2.5 }
+    { "name": "201C", "height": 1, "size": 5.0, "description": "Back  Tuck" },
+    { "name": "201C", "height": 3, "size": 2.1, "description": "Back  Tuck" },
+    { "name": "010B", "height": 7.5, "size": 2.1, "description": "Forward Pike" },
+    { "name": "100B", "height": 5, "size": 2.5, "description": "Forward Tuck" },
+    { "name": "010C", "height": 5, "size": 5.0, "description": "Forward Tuck" },
+    { "name": "103C", "height": 1, "size": 2.7, "description": "Forward 1.5 Somersault Tuck" },
+    { "name": "103C", "height": 3, "size": 1.7, "description": "Forward Tuck" },
+    { "name": "100A", "height": 10, "size": 2.1, "description": "Forward Str" },
+    { "name": "301C", "height": 3, "size": 2.7, "description": "Forward Tuck" },
+    { "name": "302C", "height": 1, "size": 2.2, "description": "Forward Somersault Tuck" },
+    { "name": "302C", "height": 3, "size": 4.7, "description": "Forward Tuck" },
+    { "name": "200A", "height": 5, "size": 2.7, "description": "Back  Str" },
+    { "name": "200A", "height": 3, "size": 4.7, "description": "Back  Str" },
+    { "name": "101A", "height": 1, "size": 3.7, "description": "Forward Str" },
+    { "name": "100A", "height": 7.5, "size": 2.7, "description": "Forward Str" },
+    { "name": "401A", "height": 1, "size": 2.5, "description": "twist Str" }
 ];
 
 function newDive3() {
@@ -485,4 +487,5 @@ function newDive3() {
     document.getElementById("level3code").innerHTML = thirdLevel[randomNumber].name;
     document.getElementById("level3height").innerHTML = thirdLevel[randomNumber].height;
     document.getElementById("level3DD").innerHTML = thirdLevel[randomNumber].size;
+    document.getElementById("level3description").innerHTML = thirdLevel[randomNumber].description;
 }

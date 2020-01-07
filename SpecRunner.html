@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -83,19 +83,11 @@
 
                         <!--...................buttonz.................................................................-->
                         <div class="practicebuttondiv">
-                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl1 " data-toggle="modal" data-target="#myModal1"> level 1</button>
-                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl2" data-toggle="modal" data-target="#myModal2"> level 2</button>
-                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl3" data-toggle="modal" data-target="#myModal3"> level 3</button>
+                             <button type="button" class="btn btn-lg btn-inline-block btn-info btnl1" data-toggle="modal" data-target="#myModal1" onclick="newDive1()"> level 1</button>
+                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl2" data-toggle="modal" data-target="#myModal2" onclick="newDive2()"> level 2</button>
+                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl3" data-toggle="modal" data-target="#myModal3" onclick="newDive3()"> level 3</button>
                             <!--.Search button........................................................-->
-                            <div id=results class="align-items-center">
-                                <div class="search-box">
-                                    <input class="search-txt" type="text" name="" id="search" placeholder="search dive">
-                                    <a class="search-btn" href="#">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                </div>
-                                <ul class="list-group" id="result"></ul>
-                            </div>
+                            
                             <hr />
                         </div>
 
@@ -104,47 +96,53 @@
                         <!--...Modalz & Bubbles.....................................................................-->
                         <div class="row text-center">
                             <!--level 1.............................................................-->
-                            <div class="justify-content-center modal" id="myModal1">
+                           <div class="justify-content-center modal" id="myModal1">
 
-                                <div id="newDive1" class="showdives modal-dialog">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h2>LEVEL 1</h2>
-                                    <h5>Code</h5><p id="level1code" class="divedescription"></p>
-                                    <hr class="my-2">
-                                    <h5>Height</h5><p id="level1height" class="divedescription"></p>
-                                    <hr class="my-2">
-                                    <h5>Difficulty</h5><p id="level1DD" class="divedescription"></p>
+                                    <div id="newDive1" class="showdives1 modal-dialog  modalCenter" role="dialog">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="h2modalheader">LEVEL 1</h2>
+                                        <h5 class="h5modalheader">Code</h5><p id="level1code" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Height</h5><p id="level1height" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Difficulty</h5><p id="level1DD" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Description</h5><p id="level1description" class="divedescription2"></p>
+                                    </div>
+                                    <button onclick="newDive1()" class="btn btn-lg btnl1newdive" id="newD1">NEW DIVE</button>
                                 </div>
-                                <button onclick="newDive1()" class="btn btn-lg btn-info" id="newD1">New Dive</button>
-                            </div>
-                            <!--level 2.............................................................-->
-                            <div class="justify-content-center modal" id="myModal2">
-                                <div id="newDive2" class="showdives modal-dialog">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h2>LEVEL 2</h2>
-                                    <h5>Code</h5><p id="level2code" class="divedescription"></p>
-                                    <hr class="my-2">
-                                    <h5>Height</h5><p id="level2height" class="divedescription"></p>
-                                    <hr class="my-2">
-                                    <h5>Difficulty</h5><p id="level2DD" class="divedescription"></p>
+                                <!--level 2.............................................................-->
+                                <div class="justify-content-center modal" id="myModal2">
+                                    <div id="newDive2" class="showdives2 modal-dialog modalCenter" role="dialog">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="h2modalheader">LEVEL 2</h2>
+                                        <h5 class="h5modalheader">Code</h5><p id="level2code" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Height</h5><p id="level2height" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Difficulty</h5><p id="level2DD" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Description</h5><p id="level2description" class="divedescription2"></p>
+                                    </div>
+                                    <button onclick="newDive2()" class="btn btn-lg btnl2newdive">NEW DIVE</button>
                                 </div>
-                                <button onclick="newDive2()" class="btn btn-lg btn-info">New Dive</button>
-                            </div>
 
-                            <!--level 3.............................................................-->
-                            <div class="justify-content-center modal" id="myModal3">
+                                <!--level 3.............................................................-->
+                                <div class="modal" id="myModal3">
 
-                                <div id="newDive3" class="showdives modal-dialog">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h2>LEVEL 3</h2>
-                                    <h5>Code</h5><p id="level3code" class="divedescription"></p>
-                                    <hr class="my-2">
-                                    <h5>Height</h5><p id="level3height" class="divedescription"></p>
-                                    <hr class="my-2">
-                                    <h5>Difficulty</h5><p id="level3DD" class="divedescription"></p>
+                                    <div id="newDive3" class="showdives3 modal-dialog modalCenter" role="dialog">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="h2modalheader">LEVEL 3</h2>
+                                        <h5 class="h5modalheader">Code</h5><p id="level3code" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Height</h5><p id="level3height" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Difficulty</h5><p id="level3DD" class="divedescription"></p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">Description</h5><p id="level3description" class="divedescription2"></p>
+                                    </div>
+                                    <button onclick="newDive3()" class="btn btn-lg btnl3newdive">NEW DIVE</button>
                                 </div>
-                                <button onclick="newDive3()" class="btn btn-lg btn-info">New Dive</button>
-                            </div>
                             <!--..............................................................................-->
                             <!--Bubble Chart ............................................................................................-->
                             <div class="col-12 col-lg-3 d-none mt-5 d-xl-block bubbleexplanation">

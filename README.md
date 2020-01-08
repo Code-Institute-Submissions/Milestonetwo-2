@@ -62,7 +62,7 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 ---
 * This app is tested with Jasmine to see that: 
   * Buttons work in dive app
-  *D3 map works and is created with the right sizes on height and witdt
+  * D3 map works and is created with the right sizes on height and width
  * Diveapp and functions in D3 is tested for functionality with blackbox tests from several users
  * Web Validators is used to inspect code.
   
@@ -82,7 +82,9 @@ Final editing of this site is made in Gitpod. The master bransh holds the final 
 ---
 * I got help with how to test the D3 -map from [Busy people](https://busypeoples.github.io/post/testing-d3-with-jasmine/)
 * This is my syntax knight for writing Markup [Adam Pritchard ](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* The photo is from [Unsplash](https://unsplash.com/)
+* The photo of the guy is from [Unsplash](https://unsplash.com/)
+* The photo of the girls is from [Fina](www.fina.org)
+
 
 
 Thankyou:

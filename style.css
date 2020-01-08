@@ -36,6 +36,8 @@ background-color:black;
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
+  top:-30px;
     
     text-align: center;
     align-content: center;
@@ -51,11 +53,6 @@ background-color:black;
 h1 {
     font-family: 'Lato', serif;
     font-size: 6em;
-    color: white;
-    background-color: white;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
     color: #1f88c4;
     text-shadow: rgba(155,212,203,0.9) 0px 3px 3px;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.2), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);

@@ -9,7 +9,7 @@ Diving is a sport where divers compete in how to perform technical divies as cor
 This app is great for beginners of the sport of diving. It provides a variety of information useful for divers and is also ment to be brought to the pool to be used while practicing. Map contents on this app is most useful for users located in Sweden.  
 
 ### UX
-
+---
 #### Mockups 
 My first mockup was made in Marvel and it looks great. Unfortunately this is a school project and  I dumped the idea (for now) to be able to show charts. 
 I basically only had one user story here:
@@ -40,6 +40,7 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 
 
 ### Technologies used
+---
 * Html5
 * CSS
 * Javascript
@@ -48,6 +49,7 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 * Leaflet
 
 ### Suggested Contribution
+---
 * This app only contains dives on beginner-levels, it could be extended with more advanced levels.
 * A user input and log in function could be very userful on this site. It should be possible for users to make and name their own dive lists. Also the users should be able to comment the dives with results and coach reviews. 
 * A login function for trainers could make it possible to prepare practice for groups and individual divers. 
@@ -57,18 +59,16 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 * The leaflet map could have more information on waves since this is important for outdoor practice regarding performance and water depth.
 
 ### Testing
+---
 * This app is tested with Jasmine to see that: 
   * Buttons work in dive app
   *D3 map works and is created with the right sizes on height and witdt
  * Diveapp and functions in D3 is tested for functionality with blackbox tests from several users
  * Web Validators is used to inspect code.
   
-### License
-* Student at:
-Code Institute 2020
-
 
 ### Deployment
+---
 This app is deployed at github -to commit to github, creta a new repostory on github.
 This app is written in Visual Studio and committed to github with the github addon for VS.
 
@@ -79,6 +79,7 @@ This app is written in Visual Studio and committed to github with the github add
 Final editing of this site is made in Gitpod. The master bransh holds the final version of this app. 
 
 ### Credits
+---
 * I got help with how to test the D3 -map from [Busy people](https://busypeoples.github.io/post/testing-d3-with-jasmine/)
 * This is my syntax knight for writing Markup [Adam Pritchard ](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * The photo is from [Unsplash](https://unsplash.com/)
@@ -89,6 +90,10 @@ Thankyou:
 * Teacher Tim Nelson
 * Tutor: Kevin at Code Institute
 
+### License
+---
+* Student at:
+Code Institute 2020
 by Petra Mellbrand 2020
 
 

@@ -6,7 +6,7 @@ https://ringarochkryss.github.io/Milestonetwo/.
 
 ### *Dive into the bubbles of beginners Springboard and platform diving* 
 
-Diving is a sport where divers compete in how to perform technical dives as correct as possible. Each dives has different levels of difficulty (DD) and the dives is named with a combination of numbers and letters describing how the dive is to be performed. The different dives is performed on springboards ( 1m and 3m ) and platforms:( 5m ,7.5m and 10m). 
+Diving is a sport where divers compete in how to perform technical dives as correct as possible. Each dive has different levels of difficulty (DD) and the dives is named with a combination of numbers and letters describing how the dive is to be performed. The different dives is performed on springboards ( 1m and 3m ) and platforms:( 5m ,7.5m and 10m). 
 
 This app is great for beginners of the sport of diving. It provides a variety of information useful for divers and is also ment to be brought to the pool to be used while practicing. Map contents on this app is most useful for users located in Sweden.  
 

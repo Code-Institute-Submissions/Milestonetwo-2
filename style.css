@@ -20,7 +20,7 @@ font-family: 'Montserrat', sans-serif;
 
 
 body {
-display:flex;
+display: flex;
 flex-direction: column;
 height: 100vh;
 margin:0;
@@ -28,6 +28,9 @@ background-color:black;
 
 }
 
+.row {
+  display: flex;  
+}
 
 
 .jumbostyle {

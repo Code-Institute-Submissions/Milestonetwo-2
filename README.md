@@ -100,13 +100,14 @@ Final editing of this site is made in Gitpod. The master bransh holds the final 
 Thankyou:
 * Mentor  Oluwaseun Owonikoko
 * Teacher Tim Nelson
-* Tutor: Kevin at Code Institute
+* Tutor: Kevin at Code [Code Institute](https://codeinstitute.net/)
 
 ### License
 ---
 * Student at:
-Code Institute 2020
+[Code Institute](https://codeinstitute.net/) 2020
 by Petra Mellbrand 2020
+
 
 
 

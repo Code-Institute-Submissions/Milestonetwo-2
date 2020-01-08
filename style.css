@@ -83,7 +83,6 @@ h2 {
     -moz-background-clip: text;
     background-clip: text;
     color: #1f88c4;
-    text-shadow: rgba(255,255,255,0.4) 0px 3px 3px;
 }
 
 .lead {
@@ -110,7 +109,6 @@ h5 {
     -moz-background-clip: text;
     background-clip: text;
     color: #1f88c4;
-    text-shadow: rgba(255,255,255,0.4) 0px 3px 3px;
 }
 
 .practice{
@@ -189,7 +187,7 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: #f10f4c;
+    background: #ff0000;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     border: 7px solid #4ba2ce;
     margin: 2px;
@@ -201,7 +199,7 @@ img {
 
     .btnl1newdive:hover {
         background: white;
-        color: #f10f4c;
+        color: #ff0000;
         border: 7px solid #4ba2ce;
         text-shadow: none;
     }
@@ -233,7 +231,7 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: #f10f4c;
+    background: #ff0000;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     border: 7px solid #1f88c4;
     margin: 2px;
@@ -245,7 +243,7 @@ img {
 
     .btnl2newdive:hover {
         background: white;
-        color: #f10f4c;
+        color: #ff0000;
         border: 7px solid #1f88c4;
         text-shadow: none;
     }
@@ -275,7 +273,7 @@ img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: #f10f4c;
+    background: #ff0000;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     border: 7px solid #00b0b0;
     margin: 2px;
@@ -287,7 +285,7 @@ img {
 
     .btnl3newdive:hover {
         background: white;
-        color: #f10f4c;
+        color: #ff0000;
         border: 7px solid #00b0b0;
         transition: 0.5s;
     }

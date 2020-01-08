@@ -31,19 +31,17 @@ background-color:black;
 
 
 .jumbostyle {
-   /* background-color: #dcefed;*/
     background-image: url('diving1.jpg');
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
-  top:-30px;
     
     text-align: center;
     align-content: center;
     display: block;
     height:100%;
 }
+
 
 .jumboright {
     height: 100vh;

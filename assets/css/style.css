@@ -34,10 +34,12 @@ background-color:black;
 
 
 .jumbostyle {
-    background-image: url('diving1.jpg');
+    background-image: url('assets/images/diving1.jpg');
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
     
     text-align: center;
     align-content: center;

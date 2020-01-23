@@ -83,9 +83,11 @@
 
                         <!--...................buttonz.................................................................-->
                         <div class="practicebuttondiv">
-                             <button type="button" class="btn btn-lg btn-inline-block btn-info btnl1" data-toggle="modal" data-target="#myModal1" onclick="newDive1()"> level 1</button>
+                            <button type="button" class="btn btn-md btn-inline-block btn-info btnl4" data-toggle="modal" data-target="#myModal4"> Diving Game <span class="instructiontext">Instructions</span></button>
+                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl1" data-toggle="modal" data-target="#myModal1" onclick="newDive1()"> level 1</button>
                             <button type="button" class="btn btn-lg btn-inline-block btn-info btnl2" data-toggle="modal" data-target="#myModal2" onclick="newDive2()"> level 2</button>
                             <button type="button" class="btn btn-lg btn-inline-block btn-info btnl3" data-toggle="modal" data-target="#myModal3" onclick="newDive3()"> level 3</button>
+                            <button type="button" class="btn btn-md btn-inline-block btn-info btnl4" data-toggle="modal" data-target="#myModal4"> Diving Game <span class="instructiontext">Instructions</span></button>
                             <!--.Search button........................................................-->
                             
                             <hr />
@@ -95,6 +97,21 @@
 
                         <!--...Modalz & Bubbles.....................................................................-->
                         <div class="row text-center">
+                            <!--Instructions Live Dive.............................................................-->
+                                <div class="justify-content-center modal" id="myModal4">
+                                    <div id="newDive2" class="showdives2 modal-dialog modalCenter" role="dialog">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="Practice your dives">LEVEL 2</h2>
+                                        <h5 class="h5modalheader">1</h5><p class="divedescription">Chose a level of diffculty</p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">2</h5><p class="divedescription">Read instructions of each dive</p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">3</h5><p class="divedescription">Perform the dive 3 times</p>
+                                        <hr class="my-2">
+                                        <h5 class="h5modalheader">4</h5><p class="divedescription2">Press "New dive"</p>
+                                    </div>
+                                    <button onclick="newDive2()" class="btn btn-lg btnl2newdive">NEW DIVE</button>
+                                </div>
                             <!--level 1.............................................................-->
                            <div class="justify-content-center modal" id="myModal1">
 

@@ -294,6 +294,27 @@ img {
         transition: 0.5s;
     }
 
+
+.btnl4 {
+    color: #1f88c4;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background: black;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #1f88c4;
+    margin-right: 2px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .btnl4:hover {
+        background: white;
+        color: black;
+        border: 5px solid #4ba2ce;
+    }
+
 /*modal showing dives*/
 .modalCenter {
     margin-top: 1em;

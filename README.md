@@ -113,7 +113,7 @@ Thankyou:
 ---
 * Student at:
 [Code Institute](https://codeinstitute.net/) 2020
-by Petra Mellbrand 2020
+by Petra Mellbrand
 
 
 

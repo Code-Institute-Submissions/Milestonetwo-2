@@ -32,8 +32,8 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 * user can look for indoor platforms to perform at -wich is safer -and on this site the dive clubs is marked on a map with the platforms they are practicing on. 
 * user can see what dives is present on this site and wich dives is sorted for wich level. Also the difficulty of a dive is easy to see on hover.
 
-##### Mobile Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/divemockupmobile.png" height="150">
-##### Desktop Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/divemockupdesktop.png" height="150">
+##### Mobile Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupmobile.png" height="150">
+##### Desktop Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupdesktop.png" height="150">
 
 In the last version of the site I added darker background colors and a image of syncronized platform divers in the middle. This to make it  more clear what kind of diving this is about. In swedish we use the word "Swim -jump" for this kind of diving but on english its's more easy to mix it up with scuba diving as both is reffered to as Diving. 
 

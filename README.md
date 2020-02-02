@@ -2,7 +2,8 @@
 
 https://ringarochkryss.github.io/Milestonetwo/.
 
-<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/livedivedesktopfinnished.png" height="350">
+<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/responsive%20amiresponsivedesignis.png" height="350">
+[Responsivedesign](http://ami.responsivedesign.is/)
 
 ### *Dive into the bubbles of beginners Springboard and platform diving* 
 

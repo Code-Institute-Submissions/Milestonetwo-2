@@ -2,7 +2,7 @@
 
 https://ringarochkryss.github.io/Milestonetwo/.
 
-<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/livedivedesktopfinnished.png" height="350">
+<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/livedivedesktopfinnished.png" height="350">
 
 ### *Dive into the bubbles of beginners Springboard and platform diving* 
 
@@ -13,7 +13,7 @@ This app is great for beginners of the sport of diving. It provides a variety of
 ### UX
 ---
 #### Mockups 
-##### Marvel Mockup<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/marvel%20mockup%20.png" height="150">
+##### Marvel Mockup<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/marvel%20mockup%20.png" height="150">
 My first mockup was made in Marvel and it looks great. Unfortunately this is a school project and  I dumped the idea (for now) to be able to show charts. 
 
 I only had one user story here:
@@ -31,8 +31,8 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 * user can look for indoor platforms to perform at -wich is safer -and on this site the dive clubs is marked on a map with the platforms they are practicing on. 
 * user can see what dives is present on this site and wich dives is sorted for wich level. Also the difficulty of a dive is easy to see on hover.
 
-##### Mobile Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/divemockupmobile.png" height="150">
-##### Desktop Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/divemockupdesktop.png" height="150">
+##### Mobile Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/divemockupmobile.png" height="150">
+##### Desktop Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/divemockupdesktop.png" height="150">
 
 In the last version of the site I added darker background colors and a image of syncronized platform divers in the middle. This to make it  more clear what kind of diving this is about. In swedish we use the word "Swim -jump" for this kind of diving but on english its's more easy to mix it up with scuba diving as both is reffered to as Diving. 
 
@@ -91,9 +91,9 @@ Final editing of this site is made in Gitpod. The master bransh holds the final 
 ### Credits
 ---
 * I got help with how to test the D3 -map from [Busy people](https://busypeoples.github.io/post/testing-d3-with-jasmine/)
-* This is my syntax knight for writing Markup [Adam Pritchard ](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* Markup syntax [Adam Pritchard ](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * The photo of the guy is from [Unsplash](https://unsplash.com/)
-* The photo of the girls is from [Fina](www.fina.org)
+* Font Awsome fonts is used on this website.
 
 
 

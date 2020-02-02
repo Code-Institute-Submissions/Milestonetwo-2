@@ -4,7 +4,7 @@
         //   .domain (["level1","level2","level3","level4","level4",])
         //   .range
 
-        var diameter = "300",
+        var diameter = "270",
             format = d3.format(".2n"),
             color = d3.scaleOrdinal().range(colors);
 
@@ -16,7 +16,7 @@
         var svg = d3.select("div#chart")
             .append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", "0 0 300 300")
+            .attr("viewBox", "-15 0 300 300")
             .classed("svg-content", true);
 
 
@@ -29,7 +29,7 @@
     }
 
 
-        d3.json("bubbledives.json", function (error, data) {
+        d3.json("assets/js/bubbledives.json", function (error, data) {
             if (error) throw error;
 
 
@@ -221,7 +221,7 @@ d3.select(self.frameElement).style("height", diameter + "px");
 
 // The svg
 var width = 300;
-var height = 500;
+var height = 450;
 var svg2 = d3
     .select("#mapid2")
     .append("svg")
@@ -231,8 +231,8 @@ var svg2 = d3
 
 // Map and projection
 var projection = d3.geoMercator()
-    .center([18, 66])                // GPS of location to zoom on
-    .scale(900)                    // This is like the zoom
+    .center([19, 67])                // GPS of location to zoom on
+    .scale(700)                    // This is like the zoom
     .translate([150, 100]);
 
 // data for circles:
@@ -282,11 +282,11 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
         .data(data.features)
         .enter()
         .append("path")
-        .attr("fill", "#DCEFED")
+        .attr("fill", "#151717")
         .attr("d", d3.geoPath()
             .projection(projection)
         )
-        .style("stroke", "white")
+        .style("stroke", "#869e9b")
         .style("opacity", 1)
     //.............................................................................      
 
@@ -296,7 +296,7 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
         .attr("class", "tooltip")
         .style("opacity", 1)
         .style("background-color", "white")
-        .style("color", "#00B0B0")
+        .style("color", "#1f88c4")
         .style("padding", "5px")
 
 

@@ -24,31 +24,32 @@ display: flex;
 flex-direction: column;
 height: 100vh;
 margin:0;
-background-color:black;
-
+background-color: black;
 }
 
 .row {
-  display: flex;  
+    display: flex;
 }
 
 
 .jumbostyle {
-    background-image: url('../assets/images/diving1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    
+    background-color: black;
     text-align: center;
     align-content: center;
+    vertical-align:middle;
     display: block;
-    height:100%;
+    height: 100%;
+    margin-top: auto;
 }
-
 
 .jumboright {
     height: 100vh;
-    display: flex;  
+    display: flex;
+}
+
+.jumboleft {
+    height: 100%;
+    display: flex;
 }
 
 
@@ -125,7 +126,7 @@ h5 {
 }
 
 #sigma {
-    height: 180px;
+    height: 135px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 3px solid #dcefed;
@@ -145,25 +146,14 @@ img {
 }
 
 
-
-.poolcolor {
-    background-color: #9bd4cb;
-}
-
-.poolcolorlight {
-    background-color: #dcefed;
-}
-
-.poolcolordeep1 {
-    color: #00b0b0;
-    height: 100%;
-    height: 100vh;
-}
-
-
-
-
 /*buttons*/
+@media screen and (max-width: 600px) {
+    .btnl1 .btnl2 .btnl3 .btnl4 {
+        height: 4em;
+        width: 4em;
+    }
+}
+
 /*button Level 1*/
 .btnl1 {
     color: white;
@@ -188,8 +178,8 @@ img {
 .btnl1newdive {
     font-family: 'Lato', serif;
     color: white;
-    width: 150px;
-    height: 150px;
+    width: 132px;
+    height: 132px;
     border-radius: 50%;
     background: #ff0000;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
@@ -296,7 +286,8 @@ img {
 
 
 .btnl4 {
-    color: #1f88c4;
+    font-family: 'Lato', serif;
+    color: white;
     width: 6em;
     height: 6em;
     border-radius: 50%;
@@ -309,7 +300,50 @@ img {
     transition: 0.5s;
 }
 
-    .btnl4:hover {
+
+.btnl4:hover {
+    background: white;
+    color: black;
+    border: 5px solid #4ba2ce;
+}
+
+
+.btnl5 {
+    font-family: 'Lato', serif;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: black;
+    margin-right: 2px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btnl5:hover {
+    background: white;
+    color: black;
+}
+
+.btnl6 {
+    font-family: 'Lato', serif;
+    color: white;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background: black;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    border: 5px solid #1f88c4;
+    margin-right: 4px;
+    margin-bottom: 6px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+    .btnl6:hover {
         background: white;
         color: black;
         border: 5px solid #4ba2ce;
@@ -409,51 +443,44 @@ color: white;
 }
 
 .centerdiv {
+    display: inline-block;
     height: 100vh;
     overflow: hidden;
-    vertical-align: center;
+    vertical-align: middle;
     padding: 0;
     margin: 0;
-    background-color: #dcefed;
 }
 
 .bubblesinhere {
     display: inline-block;
-    vertical-align: center;
-    height:100%;
+    margin-top:auto;
+    height:auto;
 }
 
-.bubbleexplanation {
-    margin: 0;
-    padding: 0;
-}
 
 .bubblediv {
     display: inline-block;
     position: relative;
     width: 90%;
-    vertical-align: center;
+    vertical-align: middle;
     overflow: hidden;
 }
 
 .bubblediv-content {
     display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 #chartArea {
     height: 100%;
-    overflow: hidden;
-    display:block;
+    vertical-align: middle;
+    display: block;
 }
 
 -mapswitches {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     right: 0;
-    z-index:20;
+    z-index: 2000;
 }
 
 

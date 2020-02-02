@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -49,45 +49,53 @@
 
 
         <!--Container........................................................................................-->
-        <div class="container-fluid justify-content-center align-items-center poolcolordeep1 my-auto">
+        <div class="container-fluid justify-content-center align-items-center poolcolordeep1 align-self-center">
             <div class="row">
 
                 <!--Map to the left-->
-                <div class="col-12 col-md-6 col-xl-2 order-2 order-xl-1 justify-content-center align-items-center" id="chartArea">
+                <div class="col-12 col-md-6 col-xl-2 order-2 order-xl-1 align-self-center text-center  jumboleft" id="chartArea">
+
                     <div class="text-center mt-2"><h2>Diving Clubs</h2><h5>In Sweden</h5></div>
                     <div id="mapid2" class="justify-content-center align-items-center" style="height: 450px;"></div>
+                    <button class="btn btnl4" data-toggle="collapse" data-target="#switchesformap"><span style="font-size: 2em"><i class="fas fa-sliders-h"></i></span></button>
                     <div id="mapidtooltip" class="justify-content-center align-items-center"></div>
+
                     <!--Switches to swedenmap-->
-                    <div class="col-12 text-center block mapswitches">
+                    <div id="switchesformap" class="col-12 text-center block mapswitches collapse">
                         <h5 class="lead4 text-center">Platforms</h5>
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input checkbox" id="customSwitch1" value="A" checked onstyle="danger">
-                            <label class="custom-control-label" for="customSwitch1"><i class="fa fa-arrow-up" aria-hidden="true"></i>10m</label>
-                        </div>
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input checkbox" id="customSwitch2" value="B" checked>
-                            <label class="custom-control-label" for="customSwitch2"><i class="fa fa-arrow-up " aria-hidden="true"></i>  5m</label>
-                        </div>
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input checkbox" id="customSwitch3" value="C" checked>
-                            <label class="custom-control-label" for="customSwitch3"><i class="fa fa-arrow-up " aria-hidden="true"></i>  3m</label>
+                        <div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input checkbox" id="customSwitch1" value="A" checked onstyle="danger">
+                                <label class="custom-control-label" for="customSwitch1"><i class="fa fa-arrow-up" aria-hidden="true"></i>10m</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input checkbox" id="customSwitch2" value="B" checked>
+                                <label class="custom-control-label" for="customSwitch2"><i class="fa fa-arrow-up " aria-hidden="true"></i>  5m</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input checkbox" id="customSwitch3" value="C" checked>
+                                <label class="custom-control-label" for="customSwitch3"><i class="fa fa-arrow-up " aria-hidden="true"></i>  3m</label>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
 
                 <!--dive app & below that -the bubbles................................................................................-->
-                <div class="col-12 col-xl-8 order-1 order-xl-2 justify-content-center align-items-center centerdiv">
+                <div class="col-12 col-xl-8 order-1 order-xl-2 justify-content-center align-self-center centerdiv">
                     <div class="jumbotron align-items-center jumbostyle">
-                        <h1 class="text-center">Live Dive</h1>
-                        <h5 class="text-center">Practice your <span class="d-none d-md-block">Springboard & Platform</span> diving -press a button to start!</h5>
+                        <h1 class="text-center"><i class="fas fa-swimming-pool"></i> Live Dive <button type="button" class="btn btnl5" data-toggle="modal" data-target="#myModal5"><span style="font-size: 15px"><i class="fas fa-info"></i></span></button></h1>
+                        <h5 class="text-center practice d-none d-sm-block">Practice your <span class="d-none d-md-block">Springboard & Platform</span> diving -press a button to start!</h5>
 
                         <!--...................buttonz.................................................................-->
                         <div class="practicebuttondiv">
-                             <button type="button" class="btn btn-lg btn-inline-block btn-info btnl1" data-toggle="modal" data-target="#myModal1" onclick="newDive1()"> level 1</button>
-                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl2" data-toggle="modal" data-target="#myModal2" onclick="newDive2()"> level 2</button>
-                            <button type="button" class="btn btn-lg btn-inline-block btn-info btnl3" data-toggle="modal" data-target="#myModal3" onclick="newDive3()"> level 3</button>
+                            <button type="button" class="hidden-xs-down btn btn-md btn-inline-block btn-info btnl4" data-toggle="modal" data-target="#myModal4"><span style="font-size: 2em"><i class="fas fa-gamepad"></i></span></button>
+                            <button type="button" class="btn btn-md btn-inline-block btn-info btnl1" data-toggle="modal" data-target="#myModal1" onclick="newDive1()"> level 1</button>
+                            <button type="button" class="btn btn-md btn-inline-block btn-info btnl2" data-toggle="modal" data-target="#myModal2" onclick="newDive2()"> level 2</button>
+                            <button type="button" class="btn btn-md btn-inline-block btn-info btnl3" data-toggle="modal" data-target="#myModal3" onclick="newDive3()"> level 3</button>
                             <!--.Search button........................................................-->
-                            
+
                             <hr />
                         </div>
 
@@ -95,61 +103,86 @@
 
                         <!--...Modalz & Bubbles.....................................................................-->
                         <div class="row text-center">
-                            <!--level 1.............................................................-->
-                           <div class="justify-content-center modal" id="myModal1">
-
-                                    <div id="newDive1" class="showdives1 modal-dialog  modalCenter" role="dialog">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h2 class="h2modalheader">LEVEL 1</h2>
-                                        <h5 class="h5modalheader">Code</h5><p id="level1code" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Height</h5><p id="level1height" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Difficulty</h5><p id="level1DD" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Description</h5><p id="level1description" class="divedescription2"></p>
-                                    </div>
-                                    <button onclick="newDive1()" class="btn btn-lg btnl1newdive" id="newD1">NEW DIVE</button>
+                            <!-- Live Dive Game Modal.............................................................-->
+                            <div class="justify-content-center modal" id="myModal4">
+                                <div id="newDive2" class="showdives2 modal-dialog modalCenter" role="dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2 class="h2modalheader">LET'S PLAY!</h2>
+                                    <h5 class="h5modalheader">1</h5><p>Chose a level of diffculty</p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">2</h5><p>Read instructions of each dive</p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">3</h5><p>Perform the dive 2 times</p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">4</h5><p">Press "New dive"</p>
                                 </div>
-                                <!--level 2.............................................................-->
-                                <div class="justify-content-center modal" id="myModal2">
-                                    <div id="newDive2" class="showdives2 modal-dialog modalCenter" role="dialog">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h2 class="h2modalheader">LEVEL 2</h2>
-                                        <h5 class="h5modalheader">Code</h5><p id="level2code" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Height</h5><p id="level2height" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Difficulty</h5><p id="level2DD" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Description</h5><p id="level2description" class="divedescription2"></p>
-                                    </div>
-                                    <button onclick="newDive2()" class="btn btn-lg btnl2newdive">NEW DIVE</button>
-                                </div>
+                            </div>
+                            <!--level 1 Modal.............................................................-->
+                            <div class="justify-content-center modal" id="myModal1">
 
-                                <!--level 3.............................................................-->
-                                <div class="modal" id="myModal3">
-
-                                    <div id="newDive3" class="showdives3 modal-dialog modalCenter" role="dialog">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h2 class="h2modalheader">LEVEL 3</h2>
-                                        <h5 class="h5modalheader">Code</h5><p id="level3code" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Height</h5><p id="level3height" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Difficulty</h5><p id="level3DD" class="divedescription"></p>
-                                        <hr class="my-2">
-                                        <h5 class="h5modalheader">Description</h5><p id="level3description" class="divedescription2"></p>
-                                    </div>
-                                    <button onclick="newDive3()" class="btn btn-lg btnl3newdive">NEW DIVE</button>
+                                <div id="newDive1" class="showdives1 modal-dialog  modalCenter" role="dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2 class="h2modalheader">LEVEL 1</h2>
+                                    <h5 class="h5modalheader">Code</h5><p id="level1code" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Height</h5><p id="level1height" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Difficulty</h5><p id="level1DD" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Description</h5><p id="level1description" class="divedescription2"></p>
                                 </div>
+                                <button onclick="newDive1()" class="btn btn-lg btnl1newdive" id="newD1">NEW DIVE</button>
+                            </div>
+                            <!--level 2 Modal.............................................................-->
+                            <div class="justify-content-center modal" id="myModal2">
+                                <div id="newDive2" class="showdives2 modal-dialog modalCenter" role="dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2 class="h2modalheader">LEVEL 2</h2>
+                                    <h5 class="h5modalheader">Code</h5><p id="level2code" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Height</h5><p id="level2height" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Difficulty</h5><p id="level2DD" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Description</h5><p id="level2description" class="divedescription2"></p>
+                                </div>
+                                <button onclick="newDive2()" class="btn btn-lg btnl2newdive">NEW DIVE</button>
+                            </div>
+
+                            <!--level 3 Modal.............................................................-->
+                            <div class="modal" id="myModal3">
+
+                                <div id="newDive3" class="showdives3 modal-dialog modalCenter" role="dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2 class="h2modalheader">LEVEL 3</h2>
+                                    <h5 class="h5modalheader">Code</h5><p id="level3code" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Height</h5><p id="level3height" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Difficulty</h5><p id="level3DD" class="divedescription"></p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">Description</h5><p id="level3description" class="divedescription2"></p>
+                                </div>
+                                <button onclick="newDive3()" class="btn btn-lg btnl3newdive">NEW DIVE</button>
+                            </div>
+
+                            <!--Site !nfo Modal.............................................................-->
+                            <div class="justify-content-center modal" id="myModal5">
+                                <div id="newDive2" class="showdives2 modal-dialog modalCenter" role="dialog">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h2 class="h2modalheader">WEBSITE INFO</h2>
+                                    <h5 class="h5modalheader">GAME</h5><p>Press the Game button for instructions</p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">BUBBLES</h5><p>Graph of all dives on this site colored by level and sized by difficulty</p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">LEFT MAP</h5><p>All diving clubs in Sweden and the hight of their highest platform</p>
+                                    <hr class="my-2">
+                                    <h5 class="h5modalheader">RIGTH MAP</h5><p">Weather and wind for a good outdoor diving experience</p>
+                                </div>
+                            </div>
                             <!--..............................................................................-->
                             <!--Bubble Chart ............................................................................................-->
-                            <div class="col-12 col-lg-3 d-none mt-5 d-xl-block bubbleexplanation">
-                                <h4>DIVES ON THIS SITE</h4>
-                                <p>Hoover to see<br />the difficulty<br />of each Dive (DD)</p>
-                            </div>
-                            <div class="col-12 col-xl-6 justify-content-center align-items-center bubblesinhere">
+                            <div class="col-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 justify-content-center align-items-center bubblesinhere">
                                 <div id="chart" class="bubblediv"</div>
                             </div>
 
@@ -160,21 +193,21 @@
             </div>
 
             <!--Leaflet map to the right & image........................................................................-->
-            <div class="col-12 col-md-6 col-lg- 3 col-xl-2 order-3 justify-content-center align-items-center jumboright">
-                <div id="map1" class="col-12 mt-4 mb-4 center-align"></div>
-                <div id="sigma" class="col-12 mt-3 justify-content-center">
-                    <img src="../assets/images/diveimage.jpg" alt="diving guy" width="100%">
+            <div class="col-12 col-md-6 col-lg- 3 col-xl-2 order-3 jumboright">
+                <div class="align-self-center col-12">
+                    <div id="map1" class="col-12 mt-4 mb-4 center-align"></div>
+                    <div id="sigma" class="col-12 mt-3 justify-content-center">
+                        <img src="assets/images/diveimage.jpg" alt="diving guy" width="100%">
+                    </div>
                 </div>
             </div>
-
-        </div>
         </div>
 
     </section>
     <!--App scripts................................................................-->
     <!--search for dives-->
     <script type="text/javascript" src="scriptsfortest.js"></script>
-    
+
 
 </body>
 </html>

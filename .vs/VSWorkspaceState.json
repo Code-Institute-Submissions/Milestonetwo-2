@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\Readme Images"
   ],
-  "SelectedNode": "\\favicon-32x32.png",
+  "SelectedNode": "\\Readme Images",
   "PreviewInSolutionExplorer": false
 }

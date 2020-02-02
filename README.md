@@ -14,7 +14,7 @@ This app is great for beginners of the sport of diving. It provides a variety of
 ### UX
 ---
 #### Mockups 
-##### Marvel Mockup<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/assets/images/marvel%20mockup%20.png" height="150">
+##### Marvel Mockup<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/marvel%20mockup%20.png" height="150">
 My first mockup was made in Marvel and it looks great. Unfortunately this is a school project and  I dumped the idea (for now) to be able to show charts. 
 
 I only had one user story here:
@@ -27,17 +27,21 @@ it anyway. The background to rethink came from my dive instructor. He went pract
 and wawes - he got really hurt in a foot.  So I added one map for showing places for cities (with safe indoor dive platforms) and one map for weather and wind. 
 And a bubble chart to show all dives listed in a json. Level of difficulty makes the bubbles larger or smaller. The level where you find the dive in the game decides the color of the bubble. 
 
-
 * User can use this app to keep thrack on weather, winds and temperature before diving outdoor
 * user can look for indoor platforms to perform at -wich is safer -and on this site the dive clubs is marked on a map with the platforms they are practicing on. 
 * user can see what dives is present on this site and wich dives is sorted for wich level. Also the difficulty of a dive is easy to see on hover.
 
-##### Mobile Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupmobile.png" height="150">
-##### Desktop Mockup with modal<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupdesktop.png" height="150">
+#####  Mockup with modal mobile
+<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupmobile.png"height="150">
+#####  Mockup with modal desktop
+<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupdesktop.png" height="150">
 
-In the last version of the site I added darker background colors and a image of syncronized platform divers in the middle. This to make it  more clear what kind of diving this is about. In swedish we use the word "Swim -jump" for this kind of diving but on english its's more easy to mix it up with scuba diving as both is reffered to as Diving. 
+In the last version of the site I added darker background colors, I felt it suited my site better.
 
-My own "Swim jump" -team calls itself "We who are living on the hope" in swedish the words "hope" and "jump" is the same. So maybe a way to translate it to english would be Live dive - therefore the name on this site. 
+#### Tile
+In Sweden the sport of diving from a platform down into the water is called "Swim Jump", wich makes separation from "diving" ursually performed with tanks under the surface. My own "Swim jump" -team calls itself "We who are living on the hope" and in swedish the words "hope" and "jump" is the same. So maybe a way to translate it to english would be Live dive - therefore the name on this site. 
+
+
 ### Features
 ---
 

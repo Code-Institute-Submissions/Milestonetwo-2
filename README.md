@@ -3,6 +3,7 @@
 https://ringarochkryss.github.io/Milestonetwo/.
 
 <img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/responsive%20amiresponsivedesignis.png" height="350">
+
 [Responsivedesign](http://ami.responsivedesign.is/)
 
 ### *Dive into the bubbles of beginners Springboard and platform diving* 
@@ -33,6 +34,7 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 
 #####  Mockup with modal mobile
 <img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupmobile.png" height="150">
+
 #####  Mockup with modal desktop
 <img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupdesktop.png" height="150">
 

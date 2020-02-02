@@ -32,13 +32,13 @@ And a bubble chart to show all dives listed in a json. Level of difficulty makes
 * user can see what dives is present on this site and wich dives is sorted for wich level. Also the difficulty of a dive is easy to see on hover.
 
 #####  Mockup with modal mobile
-<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupmobile.png"height="150">
+<img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupmobile.png" height="150">
 #####  Mockup with modal desktop
 <img src="https://github.com/ringarochkryss/Milestonetwo/blob/master/Readme%20Images/divemockupdesktop.png" height="150">
 
 In the last version of the site I added darker background colors, I felt it suited my site better.
 
-#### Tile
+#### Title
 In Sweden the sport of diving from a platform down into the water is called "Swim Jump", wich makes separation from "diving" ursually performed with tanks under the surface. My own "Swim jump" -team calls itself "We who are living on the hope" and in swedish the words "hope" and "jump" is the same. So maybe a way to translate it to english would be Live dive - therefore the name on this site. 
 
 
